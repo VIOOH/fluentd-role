@@ -26,7 +26,7 @@
 
 - name: FLUENTD | install elasticsearch_transport gem
   gem:
-    name: elasticsearch_transport
+    name: elasticsearch-transport
     state: present
     version: "{{ elasticsearch_transport_version }}"
     user_install: no
