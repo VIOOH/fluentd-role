@@ -48,9 +48,17 @@
     user_install: no
   changed_when: false
 
+- name: FLUENTD | install fluent-plugin-prometheus gem
+  gem:
+    name: fluent-plugin-prometheus
+    state: present
+    version: "{{ fluent_plugin_prometheus_version }}"
+    user_install: no
+  changed_when: false
+
 - name: FLUENTD | Install fluentd plugin gems
   gem:
-    name: "{{ item }}"
+    name: "{{ item }}" 
     state: present
     user_install: no
   with_items:
