@@ -56,6 +56,14 @@
     user_install: no
   changed_when: false
 
+- name: FLUENTD | install mgspack gem
+  gem:
+    name: msgpack
+    state: present
+    version: "{{ fluent_plugin_msgpack_version }}"
+    user_install: no
+  changed_when: false
+
 - name: FLUENTD | Install fluentd plugin gems
   gem:
     name: "{{ item }}" 
