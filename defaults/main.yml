@@ -7,7 +7,7 @@ elasticsearch_transport_version: '7.5.0'
 fluent_plugin_elasticsearch_version: '4.0.7'
 elasticsearch_version: '7.5.0'
 fluent-plugin-prometheus_version: '1.7.3'
-fluent_plugin_msgpack_version: '1.2.4'
+fluent_plugin_msgpack_version: '1.4.0'
 
 fluentd_conf_path: "/etc/fluent"
 fluentd_log_path: "/var/log/fluent"
