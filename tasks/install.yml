@@ -20,7 +20,7 @@
   gem:
     name: fluentd
     state: present
-    version: 1.2.0
+    version: 1.1.0
     user_install: no
   notify: restart fluentd
 
