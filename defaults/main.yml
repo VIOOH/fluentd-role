@@ -2,6 +2,7 @@
 fluentd_user: fluentd
 fluentd_group: fluentd
 
+msgpack_version: '1.3.3'
 fluentd_version: "1.3.3"
 elasticsearch_transport_version: '7.5.0'
 fluent_plugin_elasticsearch_version: '4.0.7'

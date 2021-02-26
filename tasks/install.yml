@@ -16,6 +16,14 @@
     update_cache: yes
   with_items: "{{ fluentd_required_libs }}"
 
+- name: FLUENTD | Install msgpack gem
+  gem:
+    name: msgpack
+    state: present
+    version: "{{ msgpack_version }}"
+    user_install: no
+  changed_when: false
+
 - name: FLUENTD | Install fluentd gem
   gem:
     name: fluentd
